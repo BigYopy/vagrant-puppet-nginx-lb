@@ -1,0 +1,11 @@
+---
+
+:backends:
+  - yaml
+:yaml:
+  :datadir: "data"
+
+:hierarchy:
+  - "nodes/%{::trusted.certname}"
+  - "roles/%{::role}"
+  - "common"

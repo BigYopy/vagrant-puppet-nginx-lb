@@ -1,0 +1,24 @@
+---
+
+sudo::configs:
+  'vagrant':
+    'content': 'vagrant ALL=(ALL) NOPASSWD:ALL'
+    'priority': 10
+  'admins':
+    'content': '%admins ALL=(ALL) ALL'
+    'priority': 10
+
+nginx::nginx_upstreams:
+  'webapps':
+    ensure: present
+    members:
+      - '172.16.1.11:8000'
+      - '172.16.1.12:8000'
+
+nginx::nginx_vhosts:
+  'webapp.example.com':
+    proxy: 'http://webapps'
+
+profiles:
+  - site::profile::base
+  - site::profile::webserver

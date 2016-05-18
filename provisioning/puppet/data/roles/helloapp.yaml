@@ -1,0 +1,19 @@
+---
+
+sudo::configs:
+  'vagrant':
+    'content': 'vagrant ALL=(ALL) NOPASSWD:ALL'
+    'priority': 10
+  'admins':
+    'content': '%admins ALL=(ALL) ALL'
+    'priority': 10
+
+nodejs::npm:
+ 'express':
+   'ensure': 'present'
+   'package': 'express'
+   'target': '/opt/packages'
+
+profiles:
+  - site::profile::base
+  - site::profile::helloapp
