@@ -11,9 +11,9 @@
 
 ###Overview
 In this project i am using puppet and vagrant to build an example of nginx loadbalancing
-```
-####Project layout
 
+####Project layout
+```
   /vagrant-puppet-nginx-lb
       /provisioning
           /shell                                  # Shell Provisioning: Install Puppet And required Modules                          
