@@ -52,7 +52,6 @@ To run vagrant environment:
 ```
 cd vagrant-puppet-nginx-lb
 vagrant up
+
+# Test: connect to http://localhost:8080
 ```
-
-###More Information
-
