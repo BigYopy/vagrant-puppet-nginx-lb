@@ -7,7 +7,6 @@
 2. [Setup](#setup)
     * [Setup requirements](#setup-requirements)
     * [Getting started](#getting-started)
-    * [More information](#more-information)
 
 ###Overview
 In this project i am using puppet and vagrant to build an example of nginx loadbalancing
@@ -46,7 +45,7 @@ i used Puppet roles and profiles pattern to configure project's VMs:
 git clone https://github.com/BigYopy/vagrant-puppet-nginx-lb.git
 ```
 
-###Getting Started
+####Getting Started
 
 To run vagrant environment:
 ```
